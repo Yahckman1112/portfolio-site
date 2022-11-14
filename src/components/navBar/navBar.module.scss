@@ -1,0 +1,104 @@
+@import './../../index.scss';
+
+
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    overflow-x: hidden;
+    background-color: $overlay-color;
+    color: $primary-color;
+    margin-bottom: 0px; 
+    
+    @include reponsive(tab){
+       display:flex;
+    }
+}
+
+.nav_text{
+    max-width: 300px;
+    // min-width: 400px;
+    display: flex;
+    font-weight: 700;
+    line-height: 20px;
+    align-items: center;
+    font-size: 25px;
+    cursor:pointer;
+    padding-left:40px;
+    
+    @include reponsive(tab){
+        padding-left:2px;
+        margin-right: 250px;
+    }
+
+    
+
+
+
+   
+}
+
+.nav_item{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 4rem;
+    flex-wrap: wrap;
+
+    @include reponsive(tab){
+        display: none;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+
+.nav_link{
+    
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.nav_link:hover{
+    text-decoration: none;
+    color: rgba($primary-color, 0.5);
+}
+
+
+.nav_icon{
+    // position: relative;
+    // top: 5px;
+
+    @include reponsive(tab){
+        align-items: flex-end;
+        margin-left: 290px;
+       
+    }
+
+    @include reponsive(phone){
+        margin-left: -30px !important;
+    }
+
+}
+
+.response_links{
+    
+    @include reponsive(phone){
+        position: relative;
+    }
+}
+.response_link{
+
+    @include reponsive(phone){
+        display: block;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        // left: 40;
+    }
+}

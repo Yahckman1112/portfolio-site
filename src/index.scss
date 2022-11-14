@@ -1,0 +1,210 @@
+$primary-color:#fff;
+$overlay-color: black;
+
+
+
+// media query
+
+@mixin reponsive($breakPoint) {
+    @if $breakPoint==phone {
+        @media screen and (max-width:430px){@content}
+    }
+    @if $breakPoint==tab {
+        @media screen and (max-width:768px){@content}
+    }
+}
+
+
+.hideOnDesktop{
+    visibility: hidden;
+
+    @include reponsive(tab){
+        visibility: visible;
+    }
+}
+
+.hideOnMobile{
+    visibility: visible;
+
+    @include reponsive(tab){
+        visibility: hidden;
+    }
+}
+
+html{
+    font-size: 62.54%;
+}
+
+
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+// html{
+//     font-size: 62.54%;
+// }
+
+
+
+// body{
+//     padding: 1.7rem;
+//     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+//     line-height: 1.7;
+//     color: #777;
+    
+
+// }
+
+// .header{
+//     height: 95vh;
+//     width: 100%;
+//     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.6), rgba(40,180,131,0.6) ),url('../img/hero.jpg');
+//     color: white;
+//     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+//     background-size: cover;
+//     background-position: top;
+//     position: relative;
+// }
+
+// .header__logo-box{
+//     position: absolute;
+//     top: 40;
+//     left: 40;
+// }
+
+// .header__logo{
+//     height: 3.5rem;
+// }
+// .header__text-box{
+//     position: absolute;
+//     top: 40%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     text-align: center;
+//     margin-bottom: 3rem;
+
+// }
+// .header-primary{
+//     text-transform: uppercase;
+//     color: white;
+    
+//     backface-visibility: hidden;
+// }
+
+// .header-primary--main{
+//     display: block;
+//     font-weight: 400;
+//     font-size: 5rem;
+//     letter-spacing: 35px;
+//     animation: moveInLeft;
+//     animation-duration: 3s;
+
+// }
+
+// .header-primary--sub{
+//     display: block;
+//     font-weight: 700;
+//     font-size: 2rem;
+//     letter-spacing: 17.9px;
+//     animation: moveInRight;
+//     animation-duration: 3s;
+// }
+
+// @keyframes moveInLeft{
+//     0%{
+//         opacity: 0;
+//         transform: translate(-10rem);
+//     }
+//     80%{
+//         transform: translate(10%);
+//     }
+//     100%{
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+// @keyframes moveInRight{
+//     0%{
+//         opacity: 0;
+//         transform: translate(10rem);
+//     }
+//     80%{
+//         transform: translate(-10%);
+//     }
+//     100%{
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
+
+// .btn:link,
+// .btn:visited{
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     padding: 10px 30px;
+//     display: inline-block;
+//     border-radius: 10rem;
+//     transition: all .2s;
+//     position: relative;
+
+    
+// }
+
+// .btn:hover{
+//     transform: translateY(-3px);
+//     box-shadow: 0 10px 20px rgba(0,0,0,.2);
+// }
+// .btn:active{
+//     transform: translateY(-1px);
+//     box-shadow: 0 5px 10px rgba(240, 29, 29, 0.2);
+// }
+// .btn--white{
+//     background-color: #fff;
+//     color: #777;
+//     animation: moveInButtom 3s ease-out .75s;
+//     animation-fill-mode: backwards;
+//     font-size: 1.5rem;
+
+// }
+
+// .btn::after{
+//     content: '';
+//     display: inline-block;
+//     height: 100%;
+//     width: 100%;
+//     border-radius: 10rem;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     transition: all .4s;
+// }
+
+// .btn--white::after{
+//     background-color: #fff;
+// }
+
+// .btn:hover::after{
+//     transform: scaleX(1.5) scaleY(1.7);
+//     opacity: 0;
+// }
+
+// @keyframes moveInButtom{
+//     0%{
+//         opacity: 0;
+//         transform: translateY(3rem);
+//     }
+    
+//     100%{
+//         opacity: 1;
+//         transform: translate(0);
+//     }
+// }
