@@ -17,7 +17,7 @@ import {
 import {AiOutlineMenuUnfold} from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.scss";
-function Example(args) {
+function Example({props}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -31,7 +31,7 @@ function Example(args) {
             <Link className={styles.nav_link} to="/">
               Home
             </Link>
-            <Link className={styles.nav_link} to="/about">
+            <Link onClick={console.log('about') } className={styles.nav_link} to="/about">
               About
             </Link>
             <Link className={styles.nav_link} to="/services">
@@ -51,7 +51,7 @@ function Example(args) {
             <Collapse isOpen={isOpen} navbar>
               <Nav className= {`${styles.response_links} me-auto`} navbar >
                 <NavItem>
-                  <Link to='/' className={styles.response_link} >Home</Link>
+                  <Link  to='/' className={styles.response_link} >Home</Link>
                   <Link to='/about' className={styles.response_link} >About</Link>
                   <Link to='/services' className={styles.response_link} >Services</Link>
                   <Link to='/' className={styles.response_link} >Work</Link>

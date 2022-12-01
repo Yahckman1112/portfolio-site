@@ -9,10 +9,11 @@
 
     @include reponsive(tab){
         background-position: center;
+
     }
 }
 .texts{
-    padding-top: 40%;
+    padding-top: 15%;
     @include reponsive(tab){
         padding-top: 50%;
     }
@@ -21,7 +22,7 @@
     }
 }
 .para1{
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 600;
 
     @include reponsive(tab){

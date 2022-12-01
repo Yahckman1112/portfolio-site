@@ -2,14 +2,16 @@
 
 
 .about{
-    height:80vh;
+    height:auto;
+    width: 100%;
     padding: 5rem;
-    background-color: rgba(255, 255, 255, 0.767);
+    background-color:  #f5f5f5;
+  
 
     @include reponsive(tab){
         padding: 2rem;
         height: auto;
-        width: auto;
+        
     }
 }
 
@@ -91,26 +93,26 @@ side1_text{
     }
 }
 
-.about_side::before{
-    content: "";
-    position: absolute;
-    height: 3px;
-    top: 120rem;
-    background-color: #0078ff;
-    width: 100px;
-    bottom: -12px;
+// .about_side::before{
+//     content: "";
+//     position: absolute;
+//     height: 3px;
+//     top: 120rem;
+//     background-color: #0078ff;
+//     width: 100px;
+//     bottom: -12px;
     
-    @include reponsive(phone){
-        top: 162.5rem;
-        width: 63px;
+//     @include reponsive(phone){
+//         top: 162.5rem;
+//         width: 63px;
 
-    }
-    @include reponsive(tab){
-        top: 115.9rem;
-        width: 63px;
+//     }
+//     @include reponsive(tab){
+//         top: 115.9rem;
+//         width: 63px;
 
-    }
-}
+//     }
+// }
 
 .about_side_para{
     font-size: 1.2rem;
@@ -125,3 +127,7 @@ side1_text{
 
     }
 }
+
+.skills{
+    padding-bottom: 10px; 
+ }
