@@ -1,0 +1,56 @@
+.work{
+    height: 80vh;
+    background-image: linear-gradient(to right bottom,#0077ff8b,#0077ff8b) ,url(./../../assets/img/post-3.jpg);
+    padding: 10px;
+    background-size: cover;
+    
+
+
+}
+
+.bod{
+    width: auto;
+    height: auto; 
+    
+    
+ 
+}
+
+.logo{
+    border-radius: 100%;
+    outline: 9px solid #fff;
+    outline-offset: 15px ;
+    align-items: center;
+    text-align: center;
+    margin-left: 120px;
+}
+
+.row{
+    margin-top: 200px;
+    color: #fff;
+    
+}
+
+.para{
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+  
+
+
+    &_1{
+        font-size: 30px;
+        font-weight: 600;
+        display: block;
+        
+
+    }
+
+
+    &_2{
+        font-size: 25px;
+        font-weight: 700;
+        display: block;
+
+    }
+}

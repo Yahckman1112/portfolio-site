@@ -4,13 +4,16 @@ import NavBar from './components/navBar/navBar';
 import Home from './pages/home/home';
 import About from './pages/about/about';
 import Service from './pages/services/service';
+import Work from './pages/work/work';
+
 function App() {
   return (
     <div className="App">
      <NavBar/>
-        <  Home />
-     <  About />
+      <  Home />
+      <  About />
      < Service/>
+     <Work/>
     
 {/*     
       <Routes>

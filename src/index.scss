@@ -5,7 +5,7 @@ $overlay-color: black;
 
 // media query
 
-@mixin reponsive($breakPoint) {
+@mixin responsive($breakPoint) {
     @if $breakPoint==phone {
         @media screen and (max-width:430px){@content}
     }
@@ -18,7 +18,7 @@ $overlay-color: black;
 .hideOnDesktop{
     visibility: hidden;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         visibility: visible;
     }
 }
@@ -26,7 +26,7 @@ $overlay-color: black;
 .hideOnMobile{
     visibility: visible;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         visibility: hidden;
     }
 }

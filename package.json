@@ -1,5 +1,5 @@
 {
-  "name": "two",
+  "name": "Yahckman",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,12 +13,14 @@
     "font-awesome": "^4.7.0",
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
+    "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-typed": "^1.2.0",
     "reactstrap": "^9.1.5",
+    "sass": "^1.57.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -44,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Yahckman1112/portfolio-site.git",
+  "author": "Yahckman",
+  "license": "MIT"
 }

@@ -12,7 +12,7 @@
     color: $primary-color;
     margin-bottom: 0px; 
     
-    @include reponsive(tab){
+    @include responsive(tab){
        display:flex;
     }
 }
@@ -28,12 +28,14 @@
     cursor:pointer;
     padding-left:40px;
     
-    @include reponsive(tab){
+    @include responsive(tab){
         padding-left:2px;
         margin-right: 250px;
     }
 
+
     
+
 
 
 
@@ -47,7 +49,7 @@
     padding-left: 4rem;
     flex-wrap: wrap;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         display: none;
         justify-content: center;
         flex-wrap: nowrap;
@@ -74,13 +76,13 @@
     // position: relative;
     // top: 5px;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         align-items: flex-end;
         margin-left: 290px;
        
     }
 
-    @include reponsive(phone){
+    @include responsive(phone){
         margin-left: -30px !important;
     }
 
@@ -88,13 +90,13 @@
 
 .response_links{
     
-    @include reponsive(phone){
+    @include responsive(phone){
         position: relative;
     }
 }
 .response_link{
 
-    @include reponsive(phone){
+    @include responsive(phone){
         display: block;
         align-items: center;
         position: absolute;

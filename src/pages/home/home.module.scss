@@ -7,17 +7,17 @@
     text-align: center;
     color: #fff;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         background-position: center;
 
     }
 }
 .texts{
     padding-top: 15%;
-    @include reponsive(tab){
+    @include responsive(tab){
         padding-top: 50%;
     }
-    @include reponsive(phone){
+    @include responsive(phone){
         padding-top: 90%;
     }
 }
@@ -25,7 +25,7 @@
     font-size: 5rem;
     font-weight: 600;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         font-size: 3rem;
     }
 
@@ -35,7 +35,7 @@
     font-size: 2.5rem;
     font-weight: 600;
 
-    @include reponsive(tab){
+    @include responsive(tab){
         font-size: 1.5rem;
     }
 }

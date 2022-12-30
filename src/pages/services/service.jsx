@@ -12,18 +12,12 @@ function Service(props) {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
           <div className={styles.line}></div>
-        </div>
-<div className="row">
-  
-          <div className="col-12 col-lg-4 col-md-6">
+        </div>  
+          <div>
           < CardComponent/>
           </div>
   
-          <div className="col-12 col-lg-4 col-md-6">< CardComponent/></div>
-          <div className="col-12 col-lg-4 col-md-6">< CardComponent/></div>
-  
-  
-</div>
+
 
         
       </div>
