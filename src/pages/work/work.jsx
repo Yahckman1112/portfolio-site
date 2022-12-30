@@ -1,31 +1,30 @@
 import React from 'react';
 import styles from './work.module.scss'
-import { TbWorld } from "react-icons/tb";
+import { TbCheck, TbUsers } from "react-icons/tb";
+import {BsReverseLayoutTextSidebarReverse} from 'react-icons/bs'
 import CountUp from 'react-countup';
+import {  AiFillFastForward } from 'react-icons/ai';
+
 
 function Work(props) {
 
     const datas= [
         {
-            logo: <TbWorld className={styles.logo} size={40}/> ,
+            logo: <  TbCheck className={styles.logo} size={40}/> ,
             count:100,
             text: 'Work Complete'
         },
         {
-            logo: <TbWorld className={styles.logo} size={40}/> ,
-            count:100,
-            text: 'Work Complete'
+            logo: <AiFillFastForward className={styles.logo} size={40}/> ,
+            count:3,
+            text: 'Year of Experience '
         },
         {
-            logo: <TbWorld className={styles.logo} size={40}/> ,
+            logo: <TbUsers className={styles.logo} size={40}/> ,
             count:100,
-            text: 'Work Complete'
+            text: 'Total Client'
         },
-        {
-            logo: <TbWorld className={styles.logo} size={40}/> ,
-            count:100,
-            text: 'Work Complete'
-        },
+     
     ]
     return (
         <div className={styles.work}>
@@ -36,10 +35,10 @@ function Work(props) {
 
           {datas.map(data=>(
 
-            <div className={` ${styles.bod} col-12 col-lg-3`}>
+            <div className={` ${styles.bod} col-12 col-lg-4 col-md-4`}>
            {data.logo}
                 <p className={styles.para}>
-                    <span className={styles.para_1} > < CountUp end={data.count}/> </span>
+                    <span className={styles.para_1} > < CountUp duration={5} end={data.count}/> </span>
                     <span className={styles.para_2} >{data.text}</span>
                 </p>
                  </div>          

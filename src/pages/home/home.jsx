@@ -12,9 +12,11 @@ function Home(props) {
   );
   return (
     <div className={styles.banner}>
-      <div className={styles.texts}></div>
+      <div className={styles.texts}>
       <p className={styles.para1}>I am Adeniran Yaqub</p>
       <p className={styles.para2}>{para2} </p>
+
+      </div>
     </div>
   );
 }
