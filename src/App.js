@@ -6,6 +6,7 @@ import About from './pages/about/about';
 import Service from './pages/services/service';
 import Work from './pages/work/work';
 import Portfolio from './pages/portfolio/portfolio';
+import Contact from './pages/contact/contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      < Service/>
      <Work/>
      <Portfolio/>
+     < Contact/>
 
 
     
