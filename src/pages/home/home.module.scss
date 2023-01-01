@@ -11,6 +11,10 @@
         background-position: center;
 
     }
+    @include responsive(phone){
+        background-position: center;
+
+    }
 }
 .texts{
     padding-top: 10%;

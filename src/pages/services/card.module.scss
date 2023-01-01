@@ -40,9 +40,9 @@
 
     }
     @include responsive(phone){
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 20px;
+        margin-left: -100px !important;
+        margin-right: -10px !important;
+        margin-top: 20px ;
         border-radius: 10px !important;
 
     }
