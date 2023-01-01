@@ -1,5 +1,4 @@
 import React from "react";
-import { TbWorld } from "react-icons/tb";
 import styles from "./service.module.scss";
 import CardComponent from './card'
 function Service(props) {

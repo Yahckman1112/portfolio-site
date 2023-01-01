@@ -38,12 +38,13 @@ function About(props) {
           <p className={styles.about_side}>About Me</p>
           {aboutMe.map((about,i)=>(
             
-          <p className={styles.about_side_para_para}>
+          <p className={styles.about_side_para}>
             {about.text}
           </p>
           ))}
         </div>
       </div>
+     
     </div>
   );
 }

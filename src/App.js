@@ -5,15 +5,19 @@ import Home from './pages/home/home';
 import About from './pages/about/about';
 import Service from './pages/services/service';
 import Work from './pages/work/work';
+import Portfolio from './pages/portfolio/portfolio';
 
 function App() {
   return (
-    <div className="App">
+    <div  className="App">
      <NavBar/>
       <  Home />
       <  About />
      < Service/>
      <Work/>
+     <Portfolio/>
+
+
     
 {/*     
       <Routes>

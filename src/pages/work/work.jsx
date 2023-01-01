@@ -21,7 +21,7 @@ function Work(props) {
         },
         {
             logo: <TbUsers className={styles.logo} size={40}/> ,
-            count:100,
+            count:3,
             text: 'Total Client'
         },
      

@@ -13,20 +13,23 @@
     }
 }
 .texts{
-    padding-top: 15%;
+    padding-top: 10%;
     @include responsive(tab){
-        padding-top: 50%;
+        padding-top: 20%;
     }
     @include responsive(phone){
-        padding-top: 90%;
+        padding-top: 32%;
     }
 }
 .para1{
-    font-size: 6rem;
-    font-weight: 700;
+    font-size: 6.3rem;
+    font-weight: 650;
 
     @include responsive(tab){
-        font-size: 3rem;
+        font-size: 4.5rem;
+    }
+    @include responsive(phone){
+        font-size: 3.5rem;
     }
 
 }
@@ -36,6 +39,10 @@
     font-weight: 600;
 
     @include responsive(tab){
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    @include responsive(phone){
+        font-size: 1.8rem;
     }
 }
+

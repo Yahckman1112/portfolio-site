@@ -1,0 +1,30 @@
+@import './../../index.scss';
+
+.portfolio{
+    height: auto;
+    background-color: $backgrounColor;
+    padding: 10px;
+}
+
+.upper{
+    display: block;
+    text-align: center;
+
+
+    &_main{
+        @extend .header
+
+    }
+
+
+
+
+    &_sub{
+        @extend .text
+    }
+
+
+    &_line{
+        @extend .lining
+    }
+}

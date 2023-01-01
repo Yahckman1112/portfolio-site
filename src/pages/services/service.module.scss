@@ -1,14 +1,26 @@
+
+@import './../../index.scss';
+
 .service{
-    background-color:  #f5f5f5;
+    background-color:  $backgrounColor;
     padding: 4rem;
     height: auto;
+
+    
 }
 
 .para1{
     text-transform: uppercase;
     font-size: 4.5rem;
     font-weight: 700;
-    color: #1e1e1e
+    color: #1e1e1e;
+
+    @include responsive(tab){
+        font-size: 3rem;
+    }
+    @include responsive(phone){
+        font-size: 2.5rem;
+    }
 
 }
 .para2{
@@ -18,13 +30,17 @@
 }
 
 .line{
-    border-bottom: 2px solid ;
     width: 40px;
     height: 5px;
     background-color: #0078ff;
     margin:30% auto ;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @include responsive(tab){
+        width: 40px;
+        height: 2px;
+    }
 }
 
 

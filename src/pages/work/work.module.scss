@@ -6,14 +6,13 @@
     background-image: linear-gradient(to right bottom,#0077ff8b,#0077ff8b) ,url(./../../assets/img/post-3.jpg);
     padding: 10px;
     background-size: cover;
+    margin-bottom: 50px;
 
     @include responsive(phone){
         height: auto;
 
     }
     
-
-
 }
 
 .bod{
