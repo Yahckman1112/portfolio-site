@@ -11,14 +11,14 @@ function Contact(props) {
         <div className={styles.contact}>
         <div className={`container ${styles.body}`}>
             <div className="row">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 col-md-6 ">
                     <p>
                         <span className={`${styles.contact_text} ${styles.contact_text_main}`}>Send Message</span>
                         <span  className={`${styles.contact_text} ${styles.contact_text_sub}`}></span>
                     </p>
                   < Form/>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6  col-md-6">
                 <p>
                         <span className={`${styles.contact_text} ${styles.contact_text_main}`}>Get In Touch</span>
                         <span  className={`${styles.contact_text} ${styles.contact_text_sub}`}></span>

@@ -65,7 +65,8 @@ html{
     height: 5px;
     background-color: #0078ff;
     margin:30% auto ;
-
+    margin-top: 0px;
+    margin-bottom: 0px;
 
     @include responsive(tab){
         width: 40px;
