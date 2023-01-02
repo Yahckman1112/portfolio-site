@@ -4,9 +4,11 @@ import { Input, Stack, Textarea, Button    } from '@chakra-ui/react'
 import styles from './contact.module.scss'
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
+import { useToast } from '@chakra-ui/react'
 
 
 function Form(props) {
+    const toast = useToast()
     const MessageSubmit=()=>{
         return Yup.object({
             name:Yup.string().required('Please let us know youer name'),
@@ -30,7 +32,17 @@ function Form(props) {
         validationSchema:MessageSubmit(),
 
         onSubmit:(values)=>{
+
+            toast({
+                title: 'Mail Sent',
+                description: "We will get back to you shortly.",
+                position: 'bottom-left',
+                status: 'success',
+                duration: 9000,
+                isClosable: true,
+              })
             console.log(values);
+
             formik.handleReset();
         }
 
