@@ -9,6 +9,7 @@ import {
 import {AiOutlineMenuUnfold} from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.scss";
+import { TiTimes } from "react-icons/ti";
 function Example({props}) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,16 +39,16 @@ function Example({props}) {
           </nav>
 
             <div className={styles.hideOnDesktop}>
-
-            <AiOutlineMenuUnfold className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} />
+              {!isOpen? <AiOutlineMenuUnfold className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} />: < TiTimes className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} /> }
             <Collapse isOpen={isOpen} navbar>
-              <Nav className= {`${styles.response_links} me-auto`} navbar >
+              <Nav className= {`${styles.response_links} `} navbar >
                 <NavItem>
-                  <Link  to='/' className={styles.response_link} >Home</Link>
-                  <Link to='/about' className={styles.response_link} >About</Link>
-                  <Link to='/services' className={styles.response_link} >Services</Link>
-                  <Link to='/' className={styles.response_link} >Work</Link>
-                  <Link to='/' className={styles.response_link} >Contact</Link>
+                  
+                  <Link   onClick={toggle}  to='/' className={styles.response_link} >Home</Link>
+                  <Link  onClick={toggle}  to='/about' className={styles.response_link} >About</Link>
+                  <Link  onClick={toggle}  to='/services' className={styles.response_link} >Services</Link>
+                  <Link  onClick={toggle}  to='/' className={styles.response_link} >Work</Link>
+                  <Link  onClick={toggle}  to='/' className={styles.response_link} >Contact</Link>
                 </NavItem>
                 
                

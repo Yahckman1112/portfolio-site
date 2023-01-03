@@ -27,6 +27,7 @@
     font-size: 25px;
     cursor:pointer;
     padding-left:40px;
+    position: fixed;
     
     @include responsive(tab){
         padding-left:2px;
@@ -73,34 +74,39 @@
 
 
 .nav_icon{
-    // position: relative;
-    // top: 5px;
-
+    
     @include responsive(tab){
+        display: flex;
+        justify-content: flex-end;
         align-items: flex-end;
-        margin-left: 290px;
+        margin-left: 700px;
        
     }
 
     @include responsive(phone){
-        margin-left: -30px !important;
+        margin-left:350px !important;
     }
 
 }
 
 .response_links{
     
-    @include responsive(phone){
-        position: relative;
+    @include responsive(tab){
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        text-align: center;
+        // background-color: $primary-color;
+        
     }
 }
 .response_link{
 
-    @include responsive(phone){
+    @include responsive(tab){
         display: block;
         align-items: center;
-        position: absolute;
         top: 40%;
-        // left: 40;
+        padding-top: 8px;
+        ;
     }
 }
