@@ -61,22 +61,4 @@ export const abouts=[
         Deserunt, accusantium suscipit. Minima aperiam numquam molestias,
         exercitationem omnis quo cumque veritatis ipsum consequatur.`
     },
-    {
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        consequatur excepturi doloremque, illum numquam alias odio.
-        Deserunt, accusantium suscipit. Minima aperiam numquam molestias,
-        exercitationem omnis quo cumque veritatis ipsum consequatur.`
-    },
-    {
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        consequatur excepturi doloremque, illum numquam alias odio.
-        Deserunt, accusantium suscipit. Minima aperiam numquam molestias,
-        exercitationem omnis quo cumque veritatis ipsum consequatur.`
-    },
-    {
-        text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        consequatur excepturi doloremque, illum numquam alias odio.
-        Deserunt, accusantium suscipit. Minima aperiam numquam molestias,
-        exercitationem omnis quo cumque veritatis ipsum consequatur.`
-    },
 ]

@@ -6,7 +6,7 @@ import { Progress } from "reactstrap";
 import { abouts,skills,aboutMe } from './aboutme';
 function About(props) {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id='about'>
       <div className={`${styles.about_body} row`}>
         <div className="col-12 col-lg-6 col-md-6">
           <div className={styles.side1}>

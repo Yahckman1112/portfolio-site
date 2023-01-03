@@ -90,7 +90,7 @@
 }
 
 .response_links{
-    
+   
     @include responsive(tab){
         width: 100%;
         height: auto;
@@ -101,7 +101,7 @@
     }
 }
 .response_link{
-
+  
     @include responsive(tab){
         display: block;
         align-items: center;

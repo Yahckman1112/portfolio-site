@@ -10,23 +10,22 @@ function CardComponent(props) {
     {
       logo:<TfiWorld size={80} className={styles.logs} />,
       header: 'web Design',
-      body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-      adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
-      perferendis eum non provident`
+      body: `I bring 
+      the wireframes of the UX designer to life through HTML5,CSS3, 
+      JavaScript and its frame work as well as collaborating with Back End Developers
+        to create a stellar finished product.`
     },
     {
       logo:< TbListCheck size={80} className={styles.logs} />,
       header: 'web Development',
-      body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-      adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
-      perferendis eum non provident`
+      body: `I develop and Implement project scope and timelines based on the design-develop-deploy process.
+
+      I Collaborate with UX designers and Back End Developers and ensured coherence between all parties`
     },
     {
       logo:< DiResponsive size={80} className={styles.logs} />,
       header: 'Responsive Design',
-      body: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-      adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
-      perferendis eum non provident`
+      body: ` I build web pages that render well on all screen sizes and resolutions (with advance CSS ) while ensuring good usability.`
     },
   ]
 

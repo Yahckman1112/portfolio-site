@@ -7,7 +7,7 @@ function Portfolio(props) {
           
             <p>
                 <spam className={`${styles.upper} ${styles.upper_main}`}>PORTFOLIO</spam>
-                <spam className={`${styles.upper} ${styles.upper_sub}`}> Lorem ipsum dolor sit amet consectetur adipisicing elit. </spam>
+                <spam className={`${styles.upper} ${styles.upper_sub}`}> I build web applications with user-friendly frameworks and dependencies. I build with React.js </spam>
                 <spam className={`${styles.upper} ${styles.upper_line}`}>  </spam>
             </p>
           

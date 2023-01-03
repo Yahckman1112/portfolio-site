@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Text, Stack, Heading, Image, Divider, ButtonGroup, Button } from '@chakra-ui/react'
 import img from './../../assets/img/work-1.jpg'
 import { Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide'
 import {BiLinkExternal} from 'react-icons/bi'
 import styles from './card.module.scss'
 function CardPort(props) {
@@ -10,63 +11,35 @@ function CardPort(props) {
             head:'Blog Site',
             title: 'Web Design',
             date: 'Jan 1.2023',
-            link:'www.facebook.com',
+            link:'https://icopy.vercel.app/',
             img : img
 
         },
         {
-            head:'Blog Site',
+            head:'Khayrul Adabi School',
             title: 'Web Design',
             date: 'Jan 1.2023',
-            link:'www.facebook.com',
+            link:'https://ka-portal.vercel.app',
             img : img
-
-
-
         },
         {
-            head:'Blog Site',
+            head:'Testing',
             title: 'Web Design',
             date: 'Jan 1.2023',
-            link:'www.facebook.com',
+            link:'https://my-test-eosin.vercel.app/',
             img : img
-
-
         },
-        {
-            head:'Blog Site',
-            title: 'Web Design',
-            date: 'Jan 1.2023',
-            link:'www.facebook.com',
-            img : img
-
-
-        },
-        {
-            head:'Blog Site',
-            title: 'Web Design',
-            date: 'Jan 1.2023',
-            link:'www.facebook.com',
-            img : img
-
-
-        },
-        {
-            head:'Blog Site',
-            title: 'Web Design',
-            date: 'Jan 1.2023',
-            link:'www.facebook.com',
-            img : img
-
-
-        },
+    
     ]
 
     return (
         <div className='container'>
             <div className="row">
             {datas.map(data=>(
+                
+                
                 <div className="col-12 col-lg-4 col-md-6 mr-2">
+                    <Slide bottom>
 <Card>
   <CardBody>
     <Image
@@ -80,12 +53,16 @@ function CardPort(props) {
     </Stack>
     <div className={styles.text}>
         <p><span className={styles.title}>{data.title}</span><span className={styles.date}>/ {data.date}</span></p>
-        <Link className={styles.logo} to = {data.link}> <BiLinkExternal size={30}/> </Link>
+        <a className={styles.logo} href={data.link} target='_blank'> <BiLinkExternal size={30}/> </a>
     </div>
+
+    <a href="">Learn more </a>
   </CardBody>
  
 </Card>
+                  </Slide>
                 </div>
+
                 
             ))}
             </div>
