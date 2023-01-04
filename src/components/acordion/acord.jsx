@@ -41,9 +41,9 @@ function Acord({title, desciption, role, technology,pages}) {
     </p>
 
     <p className={styles.header}>Pages</p>
-    <p>
+    <p className={styles.body} >
         {pages}
-    </p>
+    </p >
     </AccordionPanel>
   </AccordionItem>
 </Accordion>

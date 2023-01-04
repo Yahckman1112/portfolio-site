@@ -50,7 +50,8 @@ function Contact(props) {
             </div>
             </div>
             <div className={styles.footer}>
-                <p className={styles.footer_text}> copyright &copy; 2023 <span className={styles.footer_text1}>Yahckman</span> All Rights Reserved </p>
+                <p className={styles.footer_text}> &copy; copyright  <span className={styles.footer_text1}>Yahckman.</span> All Rights Reserved </p>
+                <p className={styles.footer_text}> </p>
             </div>
         </div>
     );
