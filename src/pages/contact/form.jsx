@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { Input, Stack, Textarea, Button    } from '@chakra-ui/react'
 // import * as Yup from yup
 import styles from './contact.module.scss'
@@ -6,8 +6,12 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup'
 import { useToast } from '@chakra-ui/react'
 
+import emailjs from '@emailjs/browser'
+
 
 function Form(props) {
+    const form = useRef()
+
     const toast = useToast()
     const MessageSubmit=()=>{
         return Yup.object({
@@ -33,6 +37,11 @@ function Form(props) {
 
         onSubmit:(values)=>{
             
+            // e.preventDefault();
+
+            emailjs.sendForm('service_j7wz2wa', 'template_b5kvcic', form.current, '-vdSzHTq-8uRJgfl7')
+              .then((result) => {
+                        
             toast({
                 title: 'Mail Sent',
                 description: "We will get back to you shortly.",
@@ -41,7 +50,22 @@ function Form(props) {
                 duration: 9000,
                 isClosable: true,
               })
-            console.log(values);
+              }, (error) => {
+                  console.log(error.text);
+            toast({
+                title: 'Mail Sent',
+                description: 'Something went wrong',
+                position: 'bottom-left',
+                status: 'error',
+                duration: 9000,
+                isClosable: true,
+              })
+              });
+
+
+
+
+            // console.log(values);
 
             formik.handleReset();
         }
@@ -56,6 +80,7 @@ function Form(props) {
     return (
         <div>
               <form 
+              ref={form}
               onSubmit={formik.handleSubmit}>
                     <Stack spacing={7}>
                         <div>

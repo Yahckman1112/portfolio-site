@@ -40,8 +40,8 @@ function Contact(props) {
                     </p>
                     <div className={styles.logo}>
                    <a href=""> < FaFacebookF className={styles.logos} size={50}/></a>
-                   <a href="">< FaTwitter className={styles.logos} size={50}/></a>
-                   <a href=""> < FaGithub className={styles.logos} size={50}/></a>
+                   <a href="https://twitter.com/Yahckman">< FaTwitter className={styles.logos} size={50}/></a>
+                   <a href="https://github.com/Yahckman1112"> < FaGithub className={styles.logos} size={50}/></a>
                    {/* <a href=""> < BsPhone className={styles.logos} size={50}/></a> */}
             
                     </div>
@@ -50,7 +50,7 @@ function Contact(props) {
             </div>
             </div>
             <div className={styles.footer}>
-                <p className={styles.footer_text}>Design by <span className={styles.footer_text1}>Yahckman</span> </p>
+                <p className={styles.footer_text}> copyright &copy; 2023 <span className={styles.footer_text1}>Yahckman</span> All Rights Reserved </p>
             </div>
         </div>
     );
