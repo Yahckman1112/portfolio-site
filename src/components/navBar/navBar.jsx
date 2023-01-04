@@ -38,7 +38,7 @@ function Example({props}) {
           </nav>
 
             <div className={styles.hideOnDesktop}>
-              {!isOpen? <AiOutlineMenuUnfold className={`${styles.nav_icon} `} size={20} onClick={toggle} style={{ color: "white" }} />: < TiTimes className={`${styles.nav_icon} `} size={20} onClick={toggle} style={{ color: "white" }} /> }
+              {!isOpen? <AiOutlineMenuUnfold className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} />: < TiTimes className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} /> }
             <Collapse isOpen={isOpen} navbar>
               <Nav className= {`${styles.response_links} `} navbar >
                 <NavItem>

@@ -5,14 +5,23 @@ import { Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide'
 import {BiLinkExternal} from 'react-icons/bi'
 import styles from './card.module.scss'
-function CardPort(props) {
+import Acord from './../../components/acordion/acord';
+function CardPort({title, desciption, role, technology,pages}) {
     const datas=[
         {
             head:'Blog Site',
             title: 'Web Design',
             date: 'Jan 1.2023',
             link:'https://icopy.vercel.app/',
-            img : img
+            img : img,
+            desciption :`Icopy-BLOG is an online journal or 
+            informational website that offers regularly updated content on politics 
+            politics. football and other news).
+            And user can also rech-out to the copy writer for writeup on advertisment and marketing .`, 
+            role:`I solely build the front end user 
+            interface and then connect the UI with the by backend API.`,
+            technology:'React.js, Material UI, Bootsrtap, font-awesome, react bootstrap, react-icon',
+            pages: 'Home, About, Service, Blog, Contact......'
 
         },
         {
@@ -20,14 +29,26 @@ function CardPort(props) {
             title: 'Web Design',
             date: 'Jan 1.2023',
             link:'https://ka-portal.vercel.app',
-            img : img
+            img : img,
+            desciption:`KA-PORTAL is a an effective school app that ttok care of alot of difficult tasks
+            in the school, like pasting exam manually student registratin that attracts bunch of files and so much more... 
+
+            `, 
+            role: `i build part of the front end user interface by working with the UI designer and connect the UI with the 
+            backend by working with the backend developer, by enabling cross origin resource sharing `,
+            technology:'React.js, react-bootstrap,slider.js,react-icons',
+            pages:'Home page, Lecture, Student Registration , Student Result....'
         },
         {
             head:'Testing',
             title: 'Web Design',
             date: 'Jan 1.2023',
             link:'https://my-test-eosin.vercel.app/',
-            img : img
+            img : img,
+            desciption, 
+            role,
+            technology,
+            pages
         },
     
     ]
@@ -53,12 +74,17 @@ function CardPort(props) {
     </Stack>
     <div className={styles.text}>
         <p><span className={styles.title}>{data.title}</span><span className={styles.date}>/ {data.date}</span></p>
-        <a className={styles.logo} href={data.link} target='_blank'> <BiLinkExternal size={30}/> </a>
+        <a className={styles.logo} href={data.link} target='_blank'> <BiLinkExternal size={20}/> </a>
     </div>
 
-    <a href="">Learn more </a>
+   < Acord 
+   title='Read more' 
+   desciption={data.desciption}
+   role={data.role} 
+   technology={data.technology}
+   pages={data.pages}
+   />
   </CardBody>
- 
 </Card>
                   </Slide>
                 </div>
