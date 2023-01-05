@@ -31,7 +31,7 @@ function CardPort({title, desciption, role, technology,pages}) {
             link:'https://ka-portal.vercel.app',
             img : img,
             desciption:`KA-PORTAL is a an effective school app that ttok care of alot of difficult tasks
-            in the school, like pasting exam manually student registratin that attracts bunch of files and so much more... 
+            in the school, like pasting exam results manually,registratin of student that attracts bunch of files and so much more... 
 
             `, 
             role: `i build part of the front end user interface by working with the UI designer and connect the UI with the 
@@ -59,9 +59,9 @@ function CardPort({title, desciption, role, technology,pages}) {
             {datas.map(data=>(
                 
                 
-                <div className="col-12 col-lg-4 col-md-6 mr-2">
+                <div className="col-12 col-lg-12 col-md-12 mr-2">
                     <Slide bottom>
-<Card>
+<Card className={styles.card}>
   <CardBody>
     <Image
       src={data.img}

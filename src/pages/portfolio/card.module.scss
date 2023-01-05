@@ -18,15 +18,43 @@
 }
 .logo{
     flex: 1;
-    padding-left: 140px;
+    padding-left: 900px;
     margin-top: -20px;
     color: #0078ff;
     text-decoration: none;
-    transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out;
+    
+    @media screen and (max-width:768px) {
+        padding-left: 490px;
+        
+    }
+    @media screen and (max-width:430px) {
+        padding-left: 180px;
+        
+    }
+
+}
+.img{
+
+    width: 99%;
 }
 
 .img:hover{
-    transform: scale(1.05);
-    transition: all 1s ease-in-out
+    transform: scale(1.02);
+    transition: all 1s ease-in-out;
+    @media screen and (max-width:768px) {
+        
+        transform: scale(1.02);
+        
+    }
+    @media screen and (max-width:430px) {
+        transform: scale(1.04);
+        
+    }
 
+}
+
+.card{
+    margin-top: 20px;
+    background-color: white !important;
 }
