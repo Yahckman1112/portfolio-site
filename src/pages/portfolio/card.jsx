@@ -1,6 +1,10 @@
 import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Text, Stack, Heading, Image, Divider, ButtonGroup, Button } from '@chakra-ui/react'
 import img from './../../assets/img/work-1.jpg'
+import icopy from './../../assets/img/icopy.PNG'
+import kaport from './../../assets/img/ka-port.PNG'
+import test from './../../assets/img/test.PNG'
+
 import { Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide'
 import {BiLinkExternal} from 'react-icons/bi'
@@ -9,11 +13,26 @@ import Acord from './../../components/acordion/acord';
 function CardPort({title, desciption, role, technology,pages}) {
     const datas=[
         {
+            head:'Khayrul Adabi School',
+            title: 'Web Design',
+            date: 'Jan 1.2023',
+            link:'https://ka-portal.vercel.app',
+            img : kaport,
+            desciption:`KA-PORTAL is a an effective school app that ttok care of alot of difficult tasks
+            in the school, like pasting exam results manually,registratin of student that attracts bunch of files and so much more... 
+
+            `, 
+            role: `i build part of the front end user interface by working with the UI designer and connect the UI with the 
+            backend by working with the backend developer, by enabling cross origin resource sharing `,
+            technology:'React.js, react-bootstrap,slider.js,react-icons',
+            pages:'Home page, Lecture, Student Registration , Student Result....'
+        },
+        {
             head:'Blog Site',
             title: 'Web Design',
             date: 'Jan 1.2023',
             link:'https://icopy.vercel.app/',
-            img : img,
+            img : icopy,
             desciption :`Icopy-BLOG is an online journal or 
             informational website that offers regularly updated content on politics 
             politics. football and other news).
@@ -25,26 +44,11 @@ function CardPort({title, desciption, role, technology,pages}) {
 
         },
         {
-            head:'Khayrul Adabi School',
-            title: 'Web Design',
-            date: 'Jan 1.2023',
-            link:'https://ka-portal.vercel.app',
-            img : img,
-            desciption:`KA-PORTAL is a an effective school app that ttok care of alot of difficult tasks
-            in the school, like pasting exam results manually,registratin of student that attracts bunch of files and so much more... 
-
-            `, 
-            role: `i build part of the front end user interface by working with the UI designer and connect the UI with the 
-            backend by working with the backend developer, by enabling cross origin resource sharing `,
-            technology:'React.js, react-bootstrap,slider.js,react-icons',
-            pages:'Home page, Lecture, Student Registration , Student Result....'
-        },
-        {
             head:'Testing',
             title: 'Web Design',
             date: 'Jan 1.2023',
             link:'https://my-test-eosin.vercel.app/',
-            img : img,
+            img : test,
             desciption, 
             role,
             technology,
@@ -58,9 +62,9 @@ function CardPort({title, desciption, role, technology,pages}) {
             <div className="row">
             {datas.map(data=>(
                 
-                
-                <div className="col-12 col-lg-12 col-md-12 mr-2">
-                    <Slide bottom>
+     
+   <div className="col-12 col-lg-12 col-md-12 mr-2">
+    <Slide bottom>
 <Card className={styles.card}>
   <CardBody>
     <Image
