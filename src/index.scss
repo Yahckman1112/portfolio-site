@@ -9,12 +9,13 @@ $backOverlay:#0077ffa2;
 // media query
 
 @mixin responsive($breakPoint) {
-    @if $breakPoint==phone {
-        @media screen and (max-width:430px){@content}
-    }
     @if $breakPoint==tab {
         @media screen and (max-width:768px){@content}
     }
+    @if $breakPoint==phone {
+        @media screen and (max-width:430px){@content}
+    }
+  
 }
 
 
