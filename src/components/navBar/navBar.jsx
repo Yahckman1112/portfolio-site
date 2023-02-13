@@ -10,6 +10,7 @@ import {AiOutlineMenuUnfold} from 'react-icons/ai'
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.scss";
 import { TiTimes } from "react-icons/ti";
+
 function Example({props}) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
