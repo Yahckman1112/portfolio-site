@@ -115,11 +115,11 @@ side1_text{
 // }
 
 .about_side_para{
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 400;
     margin-bottom: 1rem;
     line-height: 1.7;
-    text-align: justify;
+    // text-align: justify;
 
     @include responsive(tab){
         padding-top: 1rem;
