@@ -56,7 +56,7 @@ export const skills = [
 
 export const aboutMe = [
   {
-    text: `My name is Adeniran Yaqub, and I am a junior frontend developer with a passion for creating beautiful and functional websites and applications.
+    text: `My name is Adeniran Yaqub, and I am a frontend developer with a passion for creating beautiful and functional websites and applications.
 
     My journey into the world of web development began with a curiosity for how websites are built and a desire to learn new skills. As I delved deeper into the field, I discovered a passion for creating intuitive and engaging user experiences through frontend development.
     
