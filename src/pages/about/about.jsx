@@ -11,7 +11,7 @@ function About(props) {
         <div className="col-12 col-lg-6 col-md-6">
           <div className={styles.side1}>
             <div className={styles.side1_image}>
-              <img src={img} alt="my photo" />
+              <img src='' alt="my Image" />
             </div>
 
             <div className={styles.side1_text}>

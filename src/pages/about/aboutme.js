@@ -23,6 +23,21 @@ export const abouts = [
 
 export const skills = [
   {
+    skill: "Reactjs",
+    value: 70,
+    label: "70%",
+  },
+  {
+    skill: "Nextjs",
+    value: 70,
+    label: "70%",
+  },
+  {
+    skill: "Firebase",
+    value: 50,
+    label: "50%",
+  },
+  {
     skill: "HTML ",
     value: 85,
     label: "85%",
@@ -37,11 +52,7 @@ export const skills = [
     value: 70,
     label: "70%",
   },
-  {
-    skill: "React",
-    value: 70,
-    label: "70%",
-  },
+
   {
     skill: "Material UI",
     value: 65,
