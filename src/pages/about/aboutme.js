@@ -34,8 +34,8 @@ export const skills = [
   },
   {
     skill: "Firebase",
-    value: 50,
-    label: "50%",
+    value: 70,
+    label: "70%",
   },
   {
     skill: "HTML ",
@@ -44,7 +44,7 @@ export const skills = [
   },
   {
     skill: "CSS ",
-    value: 75,
+    value: 85,
     label: "85%",
   },
   {
@@ -71,7 +71,7 @@ export const aboutMe = [
 
     My journey into the world of web development began with a curiosity for how websites are built and a desire to learn new skills. As I delved deeper into the field, I discovered a passion for creating intuitive and engaging user experiences through frontend development.
     
-    I have experience with HTML, CSS, JavaScript, and front-end framework such as React . I am also familiar with version control systems such as Git and have experience working with APIs. My strength lies in my ability to think creatively and problem-solve effectively, which helps me develop solutions that are both aesthetically pleasing and functional.
+    I have experience with HTML, CSS, JavaScript, and front-end framework such as React and Nextjs . I am also familiar with version control systems such as Git and have experience working with APIs. My strength lies in my ability to think creatively and problem-solve effectively, which helps me develop solutions that are both aesthetically pleasing and functional.
     
     In addition to my technical skills, I am also committed to staying up-to-date with the latest trends and best practices in frontend development. I am always looking for opportunities to learn and grow in this field, and I believe that my passion for web development, creativity, and motivation make me a strong candidate for any project.
     
