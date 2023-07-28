@@ -27,7 +27,7 @@
     font-size: 25px;
     cursor:pointer;
     padding-left:40px;
-    position: fixed;
+    // position: fixed;
     
     @include responsive(tab){
         padding-left:2px;

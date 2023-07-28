@@ -16,6 +16,7 @@ import img from "./../../assets/img/work-1.jpg";
 import icopy from "./../../assets/img/icopy.PNG";
 import kaport from "./../../assets/img/ka-port.PNG";
 import test from "./../../assets/img/test.PNG";
+import dataWheel from '../../assets/img/dataWheel.PNG'
 import carBook from "./../../assets/img/car-book.PNG";
 
 import { Link } from "react-router-dom";
@@ -62,25 +63,29 @@ function CardPort({ title, desciption, role, technology, pages }) {
       date: "Jan 1.2023",
       link: "https://car-book.vercel.app/",
       img: carBook,
-      desciption: `A website that allows users to search for and book cars for rent online. These sites typically 
-      have a database of available rental cars from various 
-      providers that users can browse through, 
-      compare prices, and book the car that best fits 
-      their needs. Users can also specify pick-up and
-       drop-off locations, rental dates and times, and any 
-       additional options they may require, such as GPS or 
-       child car seats. The booking process usually involves 
-       entering personal and payment information, and 
-       users can often view and manage their bookings 
-       through the site as well. Some car booking sites 
-       may also offer reviews and ratings of rental providers, 
-       as well as helpful information and guides for planning a
-        trip.`,
+      desciption: `Car-Book is an innovative and
+       user-friendly online platform designed 
+       to cater to all car rental needs. For planning
+        a weekend getaway, a business trip,
+         or simply need a vehicle for daily commuting. `,
       role: `i solely build the website`,
 
-      technology: `React.js, Material UI, Bootsrtap, 
-      font-awesome, react bootstrap, react-icon, SASS`,
+      technology: `React.js, Bootsrtap, 
+      font-awesome, react bootstrap, react-icon, SASS
+      Node.js, MongoDB, Mongoose, Express
+      `,
       pages: `Home, About, Service, Pricing, Car, Blog and Contact`,
+    },
+    {
+      head: "Data-Weel",
+      title: "Web Design",
+      date: "March 1.2023",
+      link: "https://vtu-site.vercel.app/",
+      img: dataWheel,
+      desciption : 'Responsive landing page for data-app',
+      role:'I solely build the website',
+      technology:' Next.js, react-bootstrap, react-icons, SASS, formik, yup, and email.js',
+      pages: 'Home page',
     },
     {
       head: "Testing",
@@ -93,6 +98,7 @@ function CardPort({ title, desciption, role, technology, pages }) {
       technology,
       pages,
     },
+   
   ];
 
   return (
