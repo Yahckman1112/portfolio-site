@@ -38,6 +38,11 @@ export const skills = [
     label: "70%",
   },
   {
+    skill: "Node.js",
+    value: 70,
+    label: "70%",
+  },
+  {
     skill: "HTML ",
     value: 85,
     label: "85%",

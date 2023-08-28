@@ -4,7 +4,7 @@ import Typed from "react-typed";
 function Home(props) {
   const para2 = (
     <Typed
-      strings={["A front End Developer"]}
+      strings={["frontend and backend Developer"]}
       typeSpeed={150}
       backSpeed={100}
       loop

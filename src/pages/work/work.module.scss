@@ -31,17 +31,17 @@
     outline-offset: 15px ;
     align-items: center;
     text-align: center;
-    margin-left: 160px;
+    margin-left: 19.4rem;
 
     @include responsive(tab){
-        margin-left: 95px;
+        margin-left: 9.5rem;
     }
     @include responsive(phone){
         outline: 7px solid #fff;
         outline-offset: 10px ;
         align-items: center;
         text-align: center;
-        margin-left: 175px;
+        margin-left: 17.5rem;
         // margin-bottom: 20px;
     }
 }

@@ -16,8 +16,8 @@ import img from "./../../assets/img/work-1.jpg";
 import icopy from "./../../assets/img/icopy.PNG";
 import kaport from "./../../assets/img/ka-port.PNG";
 import test from "./../../assets/img/test.PNG";
-import dataWheel from '../../assets/img/dataWheel.PNG'
-import carBook from "./../../assets/img/car-book.PNG";
+import dataWheel from "../../assets/img/dataWheel.PNG";
+import fruity from "./../../assets/img/fruity.PNG";
 
 import { Link } from "react-router-dom";
 import Slide from "react-reveal/Slide";
@@ -42,6 +42,21 @@ function CardPort({ title, desciption, role, technology, pages }) {
       pages: "Home page, Lecture, Student Registration , Student Result....",
     },
     {
+      head: "Fruity",
+      title: "Web Design",
+      date: "Aug 20.2023",
+      link: "https://fruity-ten.vercel.app/",
+      img: fruity,
+      desciption: `Developed and launched the innovative "Fruity" web application, transforming the online shopping landscape for fresh produce. This platform redefines the fruit purchasing experience, offering users a seamless and intuitive way to explore and acquire a diverse selection of premium-quality fruits. By integrating user preferences, the app delivers personalized recommendations, ensuring a uniquely tailored shopping journey. `,
+      role: `i solely build the website`,
+
+      technology: `React.js, Tailwind, 
+      font-awesome, react-icon, SASS
+      Node.js, MongoDB, Mongoose, Express
+      `,
+      pages: `Home, About, News, Contact and Shop`,
+    },
+    {
       head: "Blog Site",
       title: "Web Design",
       date: "Jan 1.2023",
@@ -57,35 +72,18 @@ function CardPort({ title, desciption, role, technology, pages }) {
         "React.js, Material UI, Bootsrtap, font-awesome, react bootstrap, react-icon",
       pages: "Home, About, Service, Blog, Contact......",
     },
-    {
-      head: "Car Book",
-      title: "Web Design",
-      date: "Jan 1.2023",
-      link: "https://car-book.vercel.app/",
-      img: carBook,
-      desciption: `Car-Book is an innovative and
-       user-friendly online platform designed 
-       to cater to all car rental needs. For planning
-        a weekend getaway, a business trip,
-         or simply need a vehicle for daily commuting. `,
-      role: `i solely build the website`,
 
-      technology: `React.js, Bootsrtap, 
-      font-awesome, react bootstrap, react-icon, SASS
-      Node.js, MongoDB, Mongoose, Express
-      `,
-      pages: `Home, About, Service, Pricing, Car, Blog and Contact`,
-    },
     {
       head: "Data-Weel",
       title: "Web Design",
       date: "March 1.2023",
       link: "https://vtu-site.vercel.app/",
       img: dataWheel,
-      desciption : 'Responsive landing page for data-app',
-      role:'I solely build the website',
-      technology:' Next.js, react-bootstrap, react-icons, SASS, formik, yup, and email.js',
-      pages: 'Home page',
+      desciption: "Responsive landing page for data-app",
+      role: "I solely build the website",
+      technology:
+        " Next.js, react-bootstrap, react-icons, SASS, formik, yup, and email.js",
+      pages: "Home page",
     },
     {
       head: "Testing",
@@ -98,7 +96,6 @@ function CardPort({ title, desciption, role, technology, pages }) {
       technology,
       pages,
     },
-   
   ];
 
   return (
