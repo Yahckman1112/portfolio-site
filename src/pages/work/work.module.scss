@@ -1,90 +1,92 @@
-@import './../../index.scss';
+@import "./../../index.scss";
 
-
-.work{
-    height: 80vh;
-    background-image: linear-gradient(to right bottom,#0077ff8b,#0077ff8b) ,url(./../../assets/img/post-3.jpg);
-    padding: 10px;
-    background-size: cover;
-    margin-bottom: 50px;
-
-    @include responsive(phone){
-        height: auto;
-
-    }
-    
+.work {
+  min-height: 80vh;
+  background-image: linear-gradient(to right bottom, #0077ff8b, #0077ff8b),
+    url(./../../assets/img/post-3.jpg);
+  padding: 10px;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 
-.bod{
-    width: auto;
-    height: auto; 
-    
-    @include responsive(phone){
-        margin-bottom: 40px;
-    }
- 
+.bod {
+  width: auto;
+  height: auto;
+  display: flex;
+
+  @include responsive(phone) {
+    margin-bottom: 40px;
+  }
 }
 
-.logo{
-    border-radius: 100%;
-    outline: 9px solid #fff;
-    outline-offset: 15px ;
+.logo {
+  border-radius: 100%;
+  outline: 9px solid #fff;
+  outline-offset: 15px;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+
+  @include responsive(tab) {
+    margin-left: 9.5rem;
+  }
+  @include responsive(phone) {
+    outline: 7px solid #fff;
+    outline-offset: 10px;
     align-items: center;
     text-align: center;
-    margin-left: 19.4rem;
-
-    @include responsive(tab){
-        margin-left: 9.5rem;
-    }
-    @include responsive(phone){
-        outline: 7px solid #fff;
-        outline-offset: 10px ;
-        align-items: center;
-        text-align: center;
-        margin-left: 17.5rem;
-        // margin-bottom: 20px;
-    }
+    margin-left: 17.5rem;
+    // margin-bottom: 20px;
+  }
 }
 
-.row{
-    margin-top: 200px;
-    color: #fff;
+.row {
+  margin-top: 200px;
+  color: #fff;
 
-    @include responsive(tab){
-        margin-top: 150px;
-    }
+  @include responsive(tab) {
+    margin-top: 10px;
+  }
 
-    @include responsive(phone){
-        margin-top:30px;
-    }
-    
-    
+  @include responsive(phone) {
+    margin-top: 30px;
+ 
+
+  }
 }
 
-.para{
-    text-align: center;
-    color: #fff;
-    padding-top: 30px;
+.para {
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
+
+  @include responsive(phone) {
+    padding-top: 15px;
+  }
+
+  &_1 {
+    font-size: 30px;
+    font-weight: 600;
+    display: block;
+  }
+
+  &_2 {
+    font-size: 25px;
+    font-weight: 700;
+    display: block;
+  }
+}
+
+.logos {
+  display: flex;
+  margin: auto;
+  border-radius: 100%;
+  outline: 4px solid #fff;
+  outline-offset: 10px;
+}
+
+.card{
     
-    @include responsive(phone){
-       padding-top: 15px;
-    }
-  
-
-
-    &_1{
-        font-size: 30px;
-        font-weight: 600;
-        display: block;
-        
-
-    }
-
-
-    &_2{
-        font-size: 25px;
-        font-weight: 700;
-        display: block;
-
-    }
+    margin-bottom: 35px !important;
+    
 }

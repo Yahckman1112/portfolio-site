@@ -8,17 +8,17 @@ import { AiFillFastForward } from "react-icons/ai";
 function Work(props) {
   const datas = [
     {
-      logo: <TbCheck className={styles.logo} size={40} />,
+      logo: <TbCheck className={styles.logos} size={40} />,
       count: 4,
       text: "Work Complete",
     },
     {
-      logo: <AiFillFastForward className={styles.logo} size={40} />,
+      logo: <AiFillFastForward className={styles.logos} size={40} />,
       count: 2,
       text: "Year of Experience ",
     },
     {
-      logo: <TbUsers className={styles.logo} size={40} />,
+      logo: <TbUsers className={styles.logos} size={40} />,
       count: 1,
       text: "Total Client",
     },
@@ -27,7 +27,7 @@ function Work(props) {
     <div className={styles.work}>
       <div className="container">
         <div className={styles.row}>
-          <div className="row">
+          {/* <div className="row">
             {datas.map((data) => (
               <div className={` ${styles.bod} col-12 col-lg-4 col-md-4`}>
                 {data.logo}
@@ -38,6 +38,22 @@ function Work(props) {
                   </span>
                   <span className={styles.para_2}>{data.text}</span>
                 </p>
+              </div>
+            ))}
+          </div> */}
+          <div className="row">
+            {datas.map((item) => (
+              <div className={` col-12 col-lg-4 col-md-4`}>
+                <div className={styles.card}>
+                  {item.logo}
+                  <div className={styles.para}>
+                    <p className={styles.para_1}>
+                      {" "}
+                      <CountUp duration={5} end={item.count} />{" "}
+                    </p>
+                    <p className={styles.para_2}>{item.text}</p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
