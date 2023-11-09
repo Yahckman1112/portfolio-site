@@ -3,7 +3,7 @@ import styles from './portfolio.module.scss'
 import CardPort from './card';
 function Portfolio(props) {
     return (
-        <div className={styles.portfolio} >
+        <div className={styles.portfolio} id='portfolio'>
           
             <p>
                 <spam className={`${styles.upper} ${styles.upper_main}`}>PORTFOLIO</spam>

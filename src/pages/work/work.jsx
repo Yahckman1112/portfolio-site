@@ -24,7 +24,7 @@ function Work(props) {
     },
   ];
   return (
-    <div className={styles.work}>
+    <div className={styles.work} id="work">
       <div className="container">
         <div className={styles.row}>
           

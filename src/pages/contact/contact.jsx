@@ -9,7 +9,7 @@ import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 function Contact(props) {
   return (
     <div>
-      <div className={styles.contact}>
+      <div className={styles.contact} id="contact">
         <div className={`container ${styles.body}`}>
           <div className="row">
             <div className="col-12 col-lg-6 col-md-6 ">

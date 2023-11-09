@@ -20,19 +20,19 @@ function Example({ props }) {
     },
     {
       name: "About",
-      path: "/",
+      path: "#about",
     },
     {
       name: "Service",
-      path: "/",
+      path: "#services",
     },
     {
-      name: "Work",
-      path: "/",
+      name: "Portfolio",
+      path: "#portfolio",
     },
     {
       name: "Contact",
-      path: "/",
+      path: "#contact",
     },
   ];
 
@@ -43,10 +43,10 @@ function Example({ props }) {
           <div className={styles.nav_title}>Yahck~Man</div>
           <div className={styles.nav_item}>
             {navData.map((item, i) => (
-              <Link to={item.path} className={styles.nav_link} key={i}>
+              <a href={item.path} className={styles.nav_link} key={i}>
                 {" "}
                 {item.name}{" "}
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -67,9 +67,9 @@ function Example({ props }) {
           >
             {navData.map((item) => (
               <div className={styles.response_link}>
-                <Link onClick={toggleDrawer} to={item.path}>
+                <a onClick={toggleDrawer} href={item.path}>
                   {item.name}
-                </Link>
+                </a>
               </div>
             ))}
           </Drawer>
