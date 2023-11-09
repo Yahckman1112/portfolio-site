@@ -1,112 +1,48 @@
-@import './../../index.scss';
+@import "./../../index.scss";
 
-
-
-.nav_header{
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    padding-left: 1.5rem;
-    overflow-x: hidden;
-    background-color: $overlay-color;
-    color: $primary-color;
-    margin-bottom: 0px; 
-    
-    @include responsive(tab){
-       display:flex;
-    }
+.header {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  overflow-x: hidden;
+  background-color: $overlay-color;
+  color: $primary-color;
+}
+.nav_title {
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.nav_text{
-    max-width: 300px;
-    // min-width: 400px;
-    display: flex;
-    font-weight: 700;
-    line-height: 20px;
-    align-items: center;
-    font-size: 25px;
-    cursor:pointer;
-    padding-left:40px;
-    // position: fixed;
-    
-    @include responsive(tab){
-        padding-left:2px;
-        margin-right: 250px;
-    }
+.nav_item {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 4rem;
+  flex-wrap: wrap;
 
-
-    
-
-
-
-
-   
-}
-
-.nav_item{
-    flex:1;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 4rem;
-    flex-wrap: wrap;
-
-    @include responsive(tab){
-        display: none;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-    
-}
-
-
-.nav_link{
-    
-    font-size: 15px;
-    font-weight: 400;
+  .nav_link {
+    font-size: 12px;
+    font-weight: 500;
     margin-right: 2rem;
-    color: white;
-    text-decoration: none;
-}
-.nav_link:hover{
-    text-decoration: none;
-    color: rgba($primary-color, 0.5);
-}
-
-
-.nav_icon{
-    
-    @include responsive(tab){
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin-left: 700px;
-       
-    }
-
-    @include responsive(phone){
-        margin-left:350px !important;
-    }
-
-}
-
-.response_links{
-   
-    @include responsive(tab){
-        width: 100%;
-        height: auto;
-        font-size: 15px;
-        text-align: center;
-        // background-color: $primary-color;
-        
-    }
-}
-.response_link{
+    @extend .hideOnMobile;
+  }
   
-    @include responsive(tab){
-        display: block;
-        align-items: center;
-        top: 40%;
-        padding-top: 8px;
-        ;
+}
+.nav_icon{
+  @extend .hideOnDesktop;
+}
+
+
+
+
+.drawer{
+    padding: 4rem 3rem;
+    
+    .response_link{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: black;
     }
 }

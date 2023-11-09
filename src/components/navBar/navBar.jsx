@@ -1,66 +1,83 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Nav,
-  NavItem,
-
-} from "reactstrap";
-
-import {AiOutlineMenuUnfold} from 'react-icons/ai'
+import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import styles from "./navBar.module.scss";
-import { TiTimes } from "react-icons/ti";
 
-function Example({props}) {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+
+function Example({ props }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+  const navData = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "About",
+      path: "/",
+    },
+    {
+      name: "Service",
+      path: "/",
+    },
+    {
+      name: "Work",
+      path: "/",
+    },
+    {
+      name: "Contact",
+      path: "/",
+    },
+  ];
 
   return (
     <div>
       <div className="nav-all">
-        <header className={styles.nav_header}>
-          <div className={styles.nav_text}> Yahck~Man</div>
-          <nav className={`${styles.hideOnMobile} ${styles.nav_item}`}>
-            <Link className={styles.nav_link} to="/">
-              Home
-            </Link>
-            <Link onClick={console.log('about') } className={styles.nav_link} to="/about">
-              About
-            </Link>
-            <Link className={styles.nav_link} to="/services">
-              Services
-            </Link>
-            <Link className={styles.nav_link} to="/">
-              Work
-            </Link>
-            <Link className={styles.nav_link} to="/contact">
-              Contact
-            </Link>
-          </nav>
+        <div className={styles.header}>
+          <div className={styles.nav_title}>Yahck~Man</div>
+          <div className={styles.nav_item}>
+            {navData.map((item, i) => (
+              <Link to={item.path} className={styles.nav_link} key={i}>
+                {" "}
+                {item.name}{" "}
+              </Link>
+            ))}
+          </div>
 
-            <div className={styles.hideOnDesktop}>
-              {!isOpen? <AiOutlineMenuUnfold className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} />: < TiTimes className={`${styles.nav_icon} `} size={40} onClick={toggle} style={{ color: "white" }} /> }
-            <Collapse isOpen={isOpen} navbar>
-              <Nav className= {`${styles.response_links} `} navbar >
-                <NavItem>
-                  
-                  <Link  onClick={toggle}  to='/' className={styles.response_link} >Home</Link>
-                  <Link  onClick={toggle}  to='/#about' className={styles.response_link} >About</Link>
-                  <Link  onClick={toggle}  to='/#services' className={styles.response_link} >Services</Link>
-                  <Link  onClick={toggle}  to='/' className={styles.response_link} >Work</Link>
-                  <Link  onClick={toggle}  to='/' className={styles.response_link} >Contact</Link>
-                </NavItem>
-                
-               
-              </Nav>
-            </Collapse>
-            </div>
-        
-        </header>
+          <AiOutlineMenuUnfold
+            className={`${styles.nav_icon} `}
+            size={40}
+            onClick={toggleDrawer}
+            style={{ color: "white" }}
+          />
+        </div>
+
+        <div>
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction="right"
+            className={styles.drawer}
+          >
+            {navData.map((item) => (
+              <div className={styles.response_link}>
+                <Link onClick={toggleDrawer} to={item.path}>
+                  {item.name}
+                </Link>
+              </div>
+            ))}
+          </Drawer>
+        </div>
+      
       </div>
     </div>
   );
 }
 
 export default Example;
-

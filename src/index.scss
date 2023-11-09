@@ -13,7 +13,7 @@ $backOverlay:#0077ffa2;
         @media screen and (max-width:768px){@content}
     }
     @if $breakPoint==phone {
-        @media screen and (max-width:430px){@content}
+        @media screen and (max-width:320px){@content}
     }
   
 }

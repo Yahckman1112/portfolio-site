@@ -3,7 +3,7 @@ import styles from "./service.module.scss";
 import CardComponent from './card'
 function Service(props) {
   return (
-    <div className={styles.service}>
+    <div className={styles.service} id="services">
       <div className="container">
         <div className="text-center">
           <p className={styles.para1}>Services</p>
