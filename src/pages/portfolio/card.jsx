@@ -18,6 +18,7 @@ import kaport from "./../../assets/img/ka-port.PNG";
 import test from "./../../assets/img/test.PNG";
 import dataWheel from "../../assets/img/dataWheel.PNG";
 import fruity from "./../../assets/img/fruity.PNG";
+import cospire from '../../assets/img/cospire.PNG'
 
 import { Link } from "react-router-dom";
 import Slide from "react-reveal/Slide";
@@ -26,6 +27,19 @@ import styles from "./card.module.scss";
 import Acord from "./../../components/acordion/acord";
 function CardPort({ title, desciption, role, technology, pages }) {
   const datas = [
+    
+    {
+      head: "Co-Spire",
+      title: "Web Design",
+      date: "Nov 1.2023",
+      link: "https://cospirehub.com/",
+      img: cospire,
+      desciption: `Co-Spire is a web app where the host can create their work space and user can choose the convinient wrkspace for him`,
+      role: `i build part of the front end user interface by working with the UI designer and connect the UI with the 
+      backend by working with the backend developer, by enabling cross origin resource sharing `,
+      technology: `React.ts, ant design, SCSS, and other dependencies`,
+      pages:`Home, Sigup, Login(For Host and Custumer), Dashboard, booking and other pages `,
+    },
     {
       head: "Khayrul Adabi School",
       title: "Web Design",
@@ -56,22 +70,22 @@ function CardPort({ title, desciption, role, technology, pages }) {
       `,
       pages: `Home, About, News, Contact and Shop`,
     },
-    {
-      head: "Blog Site",
-      title: "Web Design",
-      date: "Jan 1.2023",
-      link: "https://icopy.vercel.app/",
-      img: icopy,
-      desciption: `Icopy-BLOG is an online journal or 
-            informational website that offers regularly updated content on politics 
-            politics. football and other news).
-            And user can also rech-out to the copy writer for writeup on advertisment and marketing .`,
-      role: `I solely build the front end user 
-            interface and then connect the UI with the by backend API.`,
-      technology:
-        "React.js, Material UI, Bootsrtap, font-awesome, react bootstrap, react-icon",
-      pages: "Home, About, Service, Blog, Contact......",
-    },
+    // {
+    //   head: "Blog Site",
+    //   title: "Web Design",
+    //   date: "Jan 1.2023",
+    //   link: "https://icopy.vercel.app/",
+    //   img: icopy,
+    //   desciption: `Icopy-BLOG is an online journal or 
+    //         informational website that offers regularly updated content on politics 
+    //         politics. football and other news).
+    //         And user can also rech-out to the copy writer for writeup on advertisment and marketing .`,
+    //   role: `I solely build the front end user 
+    //         interface and then connect the UI with the by backend API.`,
+    //   technology:
+    //     "React.js, Material UI, Bootsrtap, font-awesome, react bootstrap, react-icon",
+    //   pages: "Home, About, Service, Blog, Contact......",
+    // },
 
     {
       head: "Data-Weel",
@@ -83,19 +97,19 @@ function CardPort({ title, desciption, role, technology, pages }) {
       role: "I solely build the website",
       technology:
         " Next.js, react-bootstrap, react-icons, SASS, formik, yup, and email.js",
-      pages: "Home page",
+      pages: "Landing page",
     },
-    {
-      head: "Testing",
-      title: "Web Design",
-      date: "Jan 1.2023",
-      link: "https://my-test-eosin.vercel.app/",
-      img: test,
-      desciption,
-      role,
-      technology,
-      pages,
-    },
+    // {
+    //   head: "Testing",
+    //   title: "Web Design",
+    //   date: "Jan 1.2023",
+    //   link: "https://my-test-eosin.vercel.app/",
+    //   img: test,
+    //   desciption,
+    //   role,
+    //   technology,
+    //   pages,
+    // },
   ];
 
   return (
@@ -106,12 +120,15 @@ function CardPort({ title, desciption, role, technology, pages }) {
             <Slide bottom>
               <Card className={styles.card}>
                 <CardBody>
+                  < a href={data.link} target="_blank">
+                  
                   <Image
                     src={data.img}
                     alt="work image"
                     borderRadius="lg"
                     className={styles.img}
                   />
+                  </a>
                   <Stack mt="10" spacing="3">
                     <Heading size="lg" className={styles.card_head}>
                       {data.head}

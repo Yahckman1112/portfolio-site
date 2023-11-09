@@ -27,20 +27,7 @@ function Work(props) {
     <div className={styles.work}>
       <div className="container">
         <div className={styles.row}>
-          {/* <div className="row">
-            {datas.map((data) => (
-              <div className={` ${styles.bod} col-12 col-lg-4 col-md-4`}>
-                {data.logo}
-                <p className={styles.para}>
-                  <span className={styles.para_1}>
-                    {" "}
-                    <CountUp duration={5} end={data.count} />{" "}
-                  </span>
-                  <span className={styles.para_2}>{data.text}</span>
-                </p>
-              </div>
-            ))}
-          </div> */}
+          
           <div className="row">
             {datas.map((item) => (
               <div className={` col-12 col-lg-4 col-md-4`}>
