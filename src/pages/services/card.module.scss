@@ -1,65 +1,78 @@
-@import './../../index.scss';
+@import "./../../index.scss";
 
+.logs {
+  padding: 15px;
+  border: 6px solid #6610f2;
+  border-radius: 100%;
+  color: #1e1e1e;
 
-
-.logs{
-    padding: 15px;
-    border: 6px solid #6610f2;
-    border-radius: 100%;
-    color: #1e1e1e;
-
-    &:hover{
-        background-color: #6610f2;
-        transition: .5s;
-        color: white;
-        border-color: rgba(255, 255, 255, 0.76);
-    }
-    
+  &:hover {
+    background-color: #6610f2;
+    transition: 0.5s;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.76);
+  }
 }
 
-.logo{
-    
-   margin-left: 40%;
-   margin-top: 10px;
+.logo {
+  margin: auto;
+
 }
 
-.carded{
+// .carded{
+//     display: flex;
+//     margin-top: 10px;
+//     padding: 20px;
+//     box-shadow: 2px 5px 7px rgb(0, 0, 0, .2) !important;
+//     border-radius: 20px !important;
+
+//     @include responsive(tab){
+    //         // margin-left: 50px;
+    //         // margin-right: 50px;
+    //         // margin-top: 20px;
+    //         // border-radius: 15px !important;
+    //         // box-shadow: 0px 5px 5px rgb(0, 0, 0, .2) !important;
+    
+    //     }
+    //     @include responsive(phone){
+        //         // margin-left: -0px !important;
+        //         // margin-right: -15px !important;
+        //         margin-top: 30px ;
+//         border-radius: 1000px !important;
+
+//     }
+
+// }
+
+.carded {
     display: flex;
-    margin-top: 10px;
-    padding: 20px;
-    background-color: #ffff !important;
-    box-shadow: 2px 5px 7px rgb(0, 0, 0, .2) !important;
-    border-radius: 20px !important;
+        background-color: #ffff !important;
+        margin-top: 10px;
+        padding: 2rem;
+        
+        @include responsive(tab){
+            
+        }
+        @include responsive(phone){
+            margin-top: 20px;
+            border-radius: 20px !important;
 
-    @include responsive(tab){
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
-        border-radius: 15px !important;
-        box-shadow: 0px 5px 5px rgb(0, 0, 0, .2) !important;
+        }
 
-    }
-    @include responsive(phone){
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-        margin-top: 20px ;
-        border-radius: 10px !important;
-
-    }
 
 }
 
-.card_header{
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.4rem 0;
-    color: #1e1e1e; 
+.card_header {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+  color: #1e1e1e;
 }
-.para{
-    color: #4e4e4e;
-    text-align: center;
-    margin-bottom: 16px;
-    font-size: 1.7rem;
+.para {
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 1.7rem;
 }

@@ -3,10 +3,12 @@
 
 .service{
     background-color:  $backgrounColor;
-    padding: 4rem;
     height: auto;
-
+    padding: 2rem;
     
+   @media screen and (max-width:320px) {
+    padding: 1rem;
+   }
 }
 
 .para1{
