@@ -20,10 +20,11 @@
     background-color: #fff;
     box-shadow: -4px 2px 5px 0px rgb(0, 0, 0, 0.4);
     padding: 1rem;
-
+    
     @include responsive(tab){
         width: auto;
         padding: 0.5rem !important;
+        box-shadow: none;
     }
 }
 
